@@ -1,65 +1,16 @@
 # WarmupReps
 
-This application is a warmup sets and reps calculator for various
-strength training programs.  You choose your working weight for each 
+This application is a warmup sets and reps calculator for the starting
+strength training program.  You choose your working weight for each
 exercise in the program and the warmup sets and reps are automatically
-calculated, along with the weights you need to place on the bar.  As 
-you use it, it remembers preferences such as bar size, unit system, 
-and the weights for each exercise when you come back for the next 
-workout.  
-
-## Programs
-
-Programs are defined in JSON and placed in the programs folder.  An 
-example program:
-
-    {
-      "title" : "My Program",
-      "exercises" : [{
-        "name" : "Squats",
-        "max" : 500,
-        "workouts" : [{
-            "sets" : "2",
-            "reps" : "5",
-            "multiplier" : 0.5
-          }, {
-            "sets" : "1",
-            "reps" : "5",
-            "multiplier" : 1.0
-          }
-        ]
-      }]
-    }
-
-Each exercise is defined with a name, a max weight, and an array of 
-workouts that include sets, reps, and the multiplier for the working
-weight.  For a more complete example, view starting_strength.json in the
-programs folder.
-
-## Contribute
-
-* Fork the project.
-* Make your feature addition or bug fix.
-* Commit.
-* Send me a pull request.
-
-New programs are welcome in pull requests.  Add them to the programs folder, 
-then push them into the programs array after loading it with an Ajax call 
-synchronously.  All of the links and pages will be automatically added for the
-new program, and no other changes are needed.  
-
-    $.ajax({
-	    url: 'programs/new_program.json',
-	    dataType: 'json',
-	    success: function(data) {
-            warmupApp.programs.push(data);
-	    },
-	    async: false
-    });
+calculated, along with the weights you need to place on the bar.  As
+you use it, it remembers preferences such as bar size, unit system,
+and the weights for each exercise when you come back for the next
+workout.
 
 ## Copyright
 
-Copyright 2012 Nicholas Munson
+Copyright 2016 Ali Mills
 All rights reserved.
 
 ## License
