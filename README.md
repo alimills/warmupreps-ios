@@ -1,4 +1,4 @@
-# WarmupReps
+# WarmupReps iOS
 
 This application is a warmup sets and reps calculator for the starting
 strength training program.  You choose your working weight for each
@@ -7,6 +7,9 @@ calculated, along with the weights you need to place on the bar.  As
 you use it, it remembers preferences such as bar size, unit system,
 and the weights for each exercise when you come back for the next
 workout.
+
+It is a fork of the H5 app [WarmupReps](https://github.com/nmunson/warmup-reps)
+by [nmunson](https://github.com/nmunson).
 
 ## Copyright
 
