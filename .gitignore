@@ -3,6 +3,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
+.DS_Store
 build/
 DerivedData/
 
@@ -15,6 +16,8 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
 xcuserdata/
 
 ## Other
